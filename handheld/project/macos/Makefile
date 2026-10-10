@@ -50,6 +50,7 @@ CFLAGS := \
 	-Wno-tautological-compare \
 	-Wno-narrowing \
 	-Wno-register
+	-mmacosx-version-min=11.0
 
 # ── Linker flags ──────────────────────────────────────────────────────────────
 LDFLAGS := \
@@ -62,6 +63,7 @@ LDFLAGS := \
 	-lpthread \
 	-lz \
 	$(SAN_FLAGS)
+	-mmacosx-version-min=11.0
 
 # ── Game source files (mirrors the Raspberry Pi Makefile) ────────────────────
 GAME_SOURCES := \
